@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 3em;
+    justify-content: center;
+    padding-top: 2em;
+
+}
+
+.nav__p {
+    padding-left: 2em;
+    font-weight: bold;
+
+}
+
+.nav__p--inicio {
+    font-weight: bold;
+}
+
+.section1 {
+   
+}
+
+.section1__div {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}

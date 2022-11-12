@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 
-<head></head>
+<head>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
 <body>
-  <nav></nav>
-  <section>
-    <h1>Hola! Soy Celia, empecé a diseñar con 11 años</h1>
-    <p>Bienvenid@ a mi portfolio</p>
+  <nav class="nav">
+    <a href=""><p class="nav__p--inicio">Inicio</p></a>
+    <a href="./html/about.html"><p class="nav__p">Sobre mí</p></a>
+    <a href="./html/contacto.html"><p class="nav__p">Contacto</p></a>
+  </nav>
+
+  <section class="section1">
+    <h1 class="section1__h1">
+      Hola! Soy Celia,
+      <i class="section1__h1--pink"> <br />UX /UI designer & developer</i>
+    </h1>
   </section>
 
-  <section>
-    <h2>
-      Soy una Diseñadora UX/UI & Desarrolladora con background en diseño
-      gráfico, programación y psicología.
-    </h2>
-
-    <div>
-      <img src="./images/miro.png" />
-      <img src="./images/figma.png" />
-      <img src="./images/sketch.png" />
-      <img src="./images/invision.png" />
-      <img src="./images/illustrator.png" />
-      <img src="./images/photoshop.png" />
-      <img src="./images/zeplin.png" />
-      <img src="./images/vscode.png" />
-      <img src="./images/html-5.png" />
-      <img src="./images/css-3.png" />
-      <img src="./images/js.png" />
-      <img src="./images/react.png" />
-      <img src="./images/webflow.png" />
-      <img src="./images/bubble.png" />
+  <section class="section2">
+    <div class="section2__div--1">
+      <p class="section2__p">Bienvenid@ a mi portfolio</p>
+      <h2 class="section2__h2">
+        Soy una Diseñadora UX/UI & Desarrolladora con background en diseño
+        gráfico, programación y psicología.
+      </h2>
     </div>
 
-    <p>
-      Research • Tests A/B • Psicología • Accesibilidad Diseño UX • Diseño UI •
-      Interactividad • Estrategia Maquetación • Desarrollo Frontend • React
-      NoCode
-    </p>
+    <div class="section2__div--icons">
+      <img class="section2__icon" src="./images/miro.png" />
+      <img class="section2__icon" src="./images/figma.png" />
+      <img class="section2__icon" src="./images/sketch.png" />
+      <img class="section2__icon" src="./images/invision.png" />
+      <img class="section2__icon" src="./images/illustrator.png" />
+      <img class="section2__icon" src="./images/photoshop.png" />
+      <img class="section2__icon" src="./images/zeplin.png" />
+      <img class="section2__icon" src="./images/vscode.png" />
+      <img class="section2__icon" src="./images/html-5.png" />
+      <img class="section2__icon" src="./images/css-3.png" />
+      <img class="section2__icon" src="./images/js.png" />
+      <img class="section2__icon" src="./images/react.png" />
+      <img class="section2__icon" src="./images/webflow.png" />
+      <img class="section2__icon" src="./images/bubble.png" />
+    </div>
+
+    <div class="section2__div--skills">
+      <p>
+        Research • Tests A/B • Psicología • Accesibilidad Diseño UX • Diseño UI
+        • Interactividad • Estrategia Maquetación • Desarrollo Frontend • React
+        NoCode
+      </p>
+    </div>
   </section>
 
-  <section>
-    <img />
-    <img />
+  <section class="section3">
+    <img class="section3__img1" src="./images/woom img.png" />
+    <img class="section3__img2" src="./images/zero img.png" />
     <img />
   </section>
 
-  <footer>
-    <div>
-      <h2>Gracias por visitar mi portfolio</h2>
-      <p>Made with <> by me</p>
+  <footer class="footer">
+    <hr class="hr" />
+    <div class="footer__div--flex">
+      <div class="footer__div">
+        <h2 class="footer__h2">Gracias por visitar mi portfolio</h2>
+      </div>
+      <div class="footer__div--icons">
+        <a><img src="./images/correo.png" /></a>
+        <a><img class="footer__img" src="./images/github.png" /></a>
+        <a><img class="footer__img" src="./images/linkedin.png" /></a>
+      </div>
     </div>
-    <div>
-      <a><img /></a>
-      <a><img /></a>
-      <a><img /></a>
-    </div>
+    <p>Made with <> by me</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./js/index.js"></script>
 </body>
