@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -44,12 +45,13 @@
 .section1 {
     position: relative;
     z-index: 1;
-    padding-top: 20em;
+    padding-top: 18em;
     background-color: rgb(253, 255, 173);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10em;
+   
    
    
 }
@@ -60,7 +62,7 @@
 }
 .section1__img--2 {
     width: 5em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 }
 
 .section1__p {
@@ -72,13 +74,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 3em;
 }
 
 .section2__form {
     padding-top: 5em;
     display: flex;
     flex-direction: column;
-    margin-left: 8em; 
+    margin-left: 3.5em; 
     font-size: 2em;  
 }
 
@@ -87,7 +90,7 @@ form input[type="text"],
 form input[type="email"] {
     border: 1px solid hotpink;
     border-radius: 3px;
-    width: 40em;
+    width: 30em;
     height: 3em;
     
 }
@@ -101,13 +104,14 @@ form input[type="email"] {
     width: 5em;
     font-size: 1em;
     background-color: white;
-    border: 2px solid hotpink;
+    border: 1px solid hotpink;
+    pointer
 }
 
 textarea {
     border: 1px solid hotpink;
     border-radius: 3px;
-    width: 40em;
+    width: 30em;
     height: 15em;
 }
 
@@ -119,7 +123,6 @@ textarea {
 .footer {
     margin-top: 10em;
     background-color: white;
-
 }
 
 .footer__div--flex {
@@ -130,12 +133,12 @@ textarea {
 .footer__div--icons {
     display: flex;
     flex-direction: column;
-    padding-right: 3em;
     padding-bottom: 4em;
 }
 
 .footer__img {
-    width: 4em;
+    width: 2em;
+    margin-right: 3em
 }
 
 .footer__img--top {
@@ -143,21 +146,23 @@ textarea {
 }
 
 .footer__div {
-    padding-left: em;
+    padding-left: 3em;
 }
 
 .footer__h2 {
-    font-size: 3em;
+    font-size: 2em;
     max-width: 70%;
+
 
 }
 
 .footer__made {
-    padding-top: 2em;
-    font-size: 2em;
+    margin-top: 2em;
+    font-size: 1em;
     color: hotpink;
     font-weight: bold;
     font-family: 'Sono', sans-serif;
+
 }
 
 .hr {
@@ -193,6 +198,20 @@ a:link, a:visited, a:focus, a:hover, a:active {
         margin-left: 1em;
     }
 
+    .section1 {
+        padding-top: 15em;
+        padding-bottom: 12em;
+    }
+
+    .section1__div{
+        margin-left: 12em;
+    }
+
+    .section2__form {
+        padding-top: 5em;
+        margin-left: 20em;
+        
+    }
 
     .footer {
         position: relative;
@@ -200,8 +219,27 @@ a:link, a:visited, a:focus, a:hover, a:active {
     }
 
     .footer__div--flex {
-        justify-content:space-around ;
+        justify-content: space-around;
     }
 
+    .footer__h2 {
+        font-size: 3em;
+    }
+
+    .footer__made {
+        margin-top: 2em;
+        font-size: 2em;
+
+
+    }
+
+    .footer__div {
+        padding-left: 6em;
+
+    }
+
+    .footer__img {
+        width: 4em;
+    }
 
 }

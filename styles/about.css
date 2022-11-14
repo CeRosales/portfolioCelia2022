@@ -23,6 +23,7 @@
     width: 100%;
     padding-bottom: 1em;
     font-size: 1.5em;
+
 }
 
 .nav__p {
@@ -111,10 +112,11 @@
 .section2__2--span{
     color: hotpink;
 }
-
 .footer {
-    margin-top: 5em;
+    margin-top: 10em;
     background-color: white;
+    position: relative;
+    z-index: 99;
 }
 
 .footer__div--flex {
@@ -125,12 +127,12 @@
 .footer__div--icons {
     display: flex;
     flex-direction: column;
-    padding-right: 3em;
     padding-bottom: 4em;
 }
 
 .footer__img {
-    width: 4em;
+    width: 2em;
+    margin-right: 3em
 }
 
 .footer__img--top {
@@ -138,21 +140,23 @@
 }
 
 .footer__div {
-    padding-left: 6em;
+    padding-left: 3em;
 }
 
 .footer__h2 {
-    font-size: 3em;
+    font-size: 2em;
     max-width: 70%;
+
 
 }
 
 .footer__made {
-    padding-top: 2em;
-    font-size: 2em;
+    margin-top: 2em;
+    font-size: 1em;
     color: hotpink;
     font-weight: bold;
     font-family: 'Sono', sans-serif;
+
 }
 
 .hr {
@@ -223,19 +227,34 @@ a:active {
         margin-left: 8em;
     }
 
-
-
-
-
     .footer {
         position: relative;
-        z-index: 99;
+         z-index: 99;
     }
 
     .footer__div--flex {
         justify-content: space-around;
     }
 
+    .footer__h2 {
+        font-size: 3em;
+    }
+
+    .footer__made {
+        margin-top: 2em;
+        font-size: 2em;
+
+
+    }
+
+    .footer__div {
+        padding-left: 6em;
+
+    }
+
+    .footer__img {
+        width: 4em;
+    }
 
 
 }

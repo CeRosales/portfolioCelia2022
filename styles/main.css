@@ -181,12 +181,12 @@
 .footer__div--icons {
     display: flex;
     flex-direction: column;
-    padding-right: 3em;
     padding-bottom: 4em;
 }
 
 .footer__img {
-    width: 4em;
+    width: 2em;
+    margin-right: 3em
 }
 
 .footer__img--top {
@@ -194,11 +194,11 @@
 }
 
 .footer__div {
-    padding-left: 6em;
+    padding-left: 3em;
 }
 
 .footer__h2 {
-    font-size: 3em;
+    font-size: 2em;
     max-width: 70%;
     
     
@@ -206,7 +206,7 @@
 
 .footer__made {
     margin-top: 2em;
-    font-size: 2em;
+    font-size: 1em;
     color: hotpink;
     font-weight: bold;
     font-family: 'Sono', sans-serif;
@@ -307,4 +307,25 @@ a:active {
     .footer__div--flex {
         justify-content: space-around;
     }
+
+    .footer__h2 {
+        font-size: 3em;
+}
+
+    .footer__made {
+        margin-top: 2em;
+        font-size: 2em;
+
+
+    }
+
+    .footer__div {
+        padding-left: 6em;
+
+    }
+
+    .footer__img {
+        width: 4em;
+    }
+
 }
