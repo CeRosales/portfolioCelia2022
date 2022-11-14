@@ -1,7 +1,4 @@
-@font-face {
-    font-family: monomaniac;
-    src: url();
-}
+
 
 * {
     margin: 0;
@@ -11,6 +8,8 @@
     border: none;
     outline: none;
     font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
 }
 
 .nav {
@@ -23,17 +22,26 @@
     background-color: white;
     width: 100%;
     padding-bottom: 1em;
-    font-size: 3em;
+    font-size: 1.5em;
+ 
 }
+
+
 
 .nav__p {
     padding-left: 2em;
     font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    color: black;
+ 
     
 }
 
 .nav__p--inicio {
     font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    color: hotpink;
+   
 }
 
 
@@ -42,33 +50,37 @@
     position: relative;
     z-index: 1;
     width: 100vw;
-    padding-top: 20em;
+    padding-top: 12em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: yellow;
-    padding-bottom: 10em;
+    background-color: rgb(253, 255, 173);
+    padding-bottom: 5em;
 }
 
 .section1__h1{
     text-align: center;
-    font-size: 5em;
-    width: 100vw;
+    font-size: 4em;
+    width: 80vw;
     padding-top: 1em;
     
 }
 
 .section1__p {
-    padding-top: 8em;
+    padding-top: 4em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 100%;
+    font-weight: bold;
     
 }
 
 .section1__h1--pink {
     font-style: normal;
     color: hotpink;
+    font-family: 'Sono', sans-serif;
+   
+    
 }
 
 .section2 {
@@ -89,7 +101,8 @@
 
 .section2__h2 {
     padding-top: 1em;
-    font-size: 3em;
+    font-size: 1.75em;
+    font-weight: normal;
 }
 
 .section2__p {
@@ -100,24 +113,51 @@
 
 .section2__div--icons {
     display: grid;
-    grid-template-columns: 10em 10em 10em 10em;
+    grid-template-columns: 3em 3em 3em 3em;
     grid-gap: 2em;
-    padding-top: 8em;
-    width: 40em;
+    padding-top: 4em;
+    width: 80vw;
     padding-bottom: 3em;
+    padding-left: 7em;
     
 }
 
 
 .section2__icon {
-   width: 6em;
+   width: 3em;
 }
 
 .section2__div--skills {
     text-align: center;
-    max-width: 95%;
-    padding-top: 6em;
+    width: 95%;
+    padding-top: 2em;
 }
+
+.section0 {
+    padding-top: 10em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.section0__p--1{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+
+}
+
+.section0__p--2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.section0__div {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .section3__img1 {
     padding-top: 5em;
@@ -129,8 +169,8 @@
 }
 
 .footer {
-    padding-top: 10em;
-   
+    margin-top: 10em;
+    background-color: white;
 }
 
 .footer__div--flex {
@@ -142,6 +182,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 3em;
+    padding-bottom: 4em;
 }
 
 .footer__img {
@@ -149,18 +190,121 @@
 }
 
 .footer__img--top {
-    padding-top: 2.5em;
+    padding-top: 2em;
+}
+
+.footer__div {
+    padding-left: 6em;
 }
 
 .footer__h2 {
-    font-size: 4em;
-    padding-left: 1.5em;
+    font-size: 3em;
     max-width: 70%;
+    
+    
+}
+
+.footer__made {
+    margin-top: 2em;
+    font-size: 2em;
+    color: hotpink;
+    font-weight: bold;
+    font-family: 'Sono', sans-serif;
     
 }
 
 .hr {
-border: none;
-    height: 12px;
-    background: black;
+    border: none;
+    height: 0.10em;
+    background: hotpink;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: black;
+}
+
+
+@media (min-width: 700px) {
+    .nav {
+        flex-direction: column;
+        width: 5em;
+        padding-bottom: 30em;
+        border-right: 2px solid hotpink;
+        font-size: 2.75em;
+        
+    }
+
+    .nav__p {
+        padding-left: 0;
+        padding-top: 1em;
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+
+    .nav__p--inicio {
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+
+    .section1 {
+        margin-left: 7em;
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+
+    .section1__h1 {
+        font-size: 5em;
+    }
+
+    .section1__p {
+        font-size: 1.5em;
+        
+        
+    }
+
+    .section2__h2 {
+        margin-left: 6em;
+        font-size: 2.5em;
+    }
+
+    .section2__div--icons {
+        grid-template-columns: 8em 8em 8em 8em;
+        margin-left: 55em;
+        width: 90vw;
+        padding-bottom: 3em;
+        padding-left: 7em;
+    }
+
+    .section2__icon {
+        width: 6em;
+    }
+
+    .section2__p {
+        font-size: 1.5em;
+    }
+
+    .section2__div--skills {
+        margin-left: 15em;
+        width: 40em;
+    }
+    .section0__div {
+        margin-left: 15em;
+        padding-right: 0;
+    }
+    .footer {
+        position: relative;
+        z-index: 99;
+    }
+
+    .section3 {
+        margin-left: 15em;
+    }
+
+    .footer__div--flex {
+        justify-content: space-around;
+    }
 }

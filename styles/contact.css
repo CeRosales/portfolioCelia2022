@@ -8,6 +8,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -18,24 +20,32 @@
     background-color: white;
     width: 100%;
     padding-bottom: 1em;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .nav__p {
     padding-left: 2em;
     font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    color: black;
 
+}
+
+.nav__color {
+    color: hotpink;
 }
 
 .nav__p--inicio {
     font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    color: black;
 }
 
 .section1 {
     position: relative;
     z-index: 1;
     padding-top: 20em;
-    background-color: yellow;
+    background-color: rgb(253, 255, 173);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,8 +74,51 @@
     align-items: center;
 }
 
+.section2__form {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8em; 
+    font-size: 2em;  
+}
+
+
+form input[type="text"],
+form input[type="email"] {
+    border: 1px solid hotpink;
+    border-radius: 3px;
+    width: 40em;
+    height: 3em;
+    
+}
+
+.form__nombre, .form__email, .form__textarea {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.form__button {
+    width: 5em;
+    font-size: 1em;
+    background-color: white;
+    border: 2px solid hotpink;
+}
+
+textarea {
+    border: 1px solid hotpink;
+    border-radius: 3px;
+    width: 40em;
+    height: 15em;
+}
+
+.form__nombre {
+    border: 2px;
+    border-color: black;
+}
+
 .footer {
-    padding-top: 10em;
+    margin-top: 10em;
+    background-color: white;
 
 }
 
@@ -78,6 +131,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 3em;
+    padding-bottom: 4em;
 }
 
 .footer__img {
@@ -85,18 +139,69 @@
 }
 
 .footer__img--top {
-    padding-top: 2.5em;
+    padding-top: 2em;
+}
+
+.footer__div {
+    padding-left: em;
 }
 
 .footer__h2 {
-    font-size: 4em;
-    padding-left: 1.5em;
+    font-size: 3em;
     max-width: 70%;
 
 }
 
+.footer__made {
+    padding-top: 2em;
+    font-size: 2em;
+    color: hotpink;
+    font-weight: bold;
+    font-family: 'Sono', sans-serif;
+}
+
 .hr {
     border: none;
-    height: 12px;
-    background: black;
+    height: 0.10em;
+    background: hotpink;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active {
+    color: black;
+}
+
+
+@media (min-width: 700px) {
+    .nav {
+        flex-direction: column;
+        width: 5em;
+        padding-bottom: 30em;
+        border-right: 2px solid hotpink;
+        font-size: 2.75em;
+
+    }
+
+    .nav__p {
+        padding-left: 0;
+        padding-top: 1em;
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+
+    .nav__p--inicio {
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+
+
+    .footer {
+        position: relative;
+        z-index: 99;
+    }
+
+    .footer__div--flex {
+        justify-content:space-around ;
+    }
+
+
 }

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 
 <head>
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="../styles/contact.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <nav class="nav">
     <a href="../index.html"><p class="nav__p--inicio">Inicio</p></a>
     <a href="./about.html"><p class="nav__p">Sobre mí</p></a>
-    <a href="./contacto.html"><p class="nav__p">Contacto</p></a>
+    <a href="./contacto.html"><p class="nav__p nav__color">Contacto</p></a>
   </nav>
   <section class="section1">
     <div class="section1__div">
@@ -17,23 +25,18 @@
     </div>
   </section>
 
-  <section>
-    <form>
-      <ul>
-        <li>
-          <label for="nombre">Nombre</label>
-          <input type="text" />
-        </li>
-        <li>
-          <label for="email">Email</label>
-          <input type="email" />
-        </li>
-        <li>
-          <label for="mensaje">Mensaje</label>
-          <input type="text" />
-        </li>
-      </ul>
-      <button type="submit">Enviar</button>
+  <section class="section2">
+    <form class="section2__form">
+      <label for="nombre">Nombre</label>
+      <input class="form__nombre" type="text" />
+
+      <label for="email">Email</label>
+      <input class="form__email" type="email" />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea class="form__textarea"></textarea>
+
+      <button class="form__button" type="submit">Enviar</button>
     </form>
   </section>
 
@@ -42,13 +45,19 @@
     <div class="footer__div--flex">
       <div class="footer__div">
         <h2 class="footer__h2">Gracias por visitar mi portfolio</h2>
+        <p class="footer__made">Made with <> by me</p>
       </div>
       <div class="footer__div--icons">
-        <a><img src="../images/correo.png" /></a>
-        <a><img class="footer__img" src="../images/github.png" /></a>
-        <a><img class="footer__img" src="../images/linkedin.png" /></a>
+        <a><img class="footer__img" src="../images/correo.png" /></a>
+        <a
+          ><img class="footer__img footer__img--top" src="../images/github.png"
+        /></a>
+        <a
+          ><img
+            class="footer__img footer__img--top"
+            src="../images/linkedin.png"
+        /></a>
       </div>
     </div>
-    <p>Made with <> by me</p>
   </footer>
 </body>

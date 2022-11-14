@@ -2,10 +2,19 @@
 
 <head>
   <link rel="stylesheet" href="./styles/main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <nav class="nav">
-    <a href=""><p class="nav__p--inicio">Inicio</p></a>
+    <a href="./index.html" class="nav__a--inicio"
+      ><p class="nav__p--inicio">Inicio</p></a
+    >
     <a href="./html/about.html"><p class="nav__p">Sobre mí</p></a>
     <a href="./html/contacto.html"><p class="nav__p">Contacto</p></a>
   </nav>
@@ -13,7 +22,7 @@
   <section class="section1">
     <h1 class="section1__h1">
       Hola! Soy Celia,
-      <i class="section1__h1--pink"> <br />UX / UI designer & developer</i>
+      <i class="section1__h1--pink"> <br />UX/UI designer & developer</i>
     </h1>
     <p class="section1__p">Bienvenid@ a mi portfolio</p>
   </section>
@@ -21,7 +30,7 @@
   <section class="section2">
     <div class="section2__div--1">
       <h2 class="section2__h2">
-        Soy una Diseñadora UX/UI & Desarrolladora con background en diseño
+        Soy una diseñadora UX / UI & desarrolladora con background en diseño
         gráfico, programación y psicología.
       </h2>
     </div>
@@ -46,16 +55,17 @@
     <div class="section2__div--skills">
       <p class="section2__p">
         Research • Tests A/B • Psicología • Accesibilidad • Diseño UX • Diseño
-        UI • Interactividad • Estrategia Maquetación • Desarrollo Frontend •
+        UI • Interactividad • Estrategia • Maquetación Desarrollo Frontend •
         React • NoCode
       </p>
     </div>
   </section>
 
-  <div>
-    <div>
-    <p>Proyectos</p>
-    <p>001</p>
+  <div class="section0">
+    <div class="section0__div">
+      <p class="section0__p--1">Proyectos</p>
+      <p class="section0__p--2">001</p>
+    </div>
     <hr class="hr" />
   </div>
 
@@ -70,6 +80,7 @@
     <div class="footer__div--flex">
       <div class="footer__div">
         <h2 class="footer__h2">Gracias por visitar mi portfolio</h2>
+        <p class="footer__made">Made with <> by me</p>
       </div>
       <div class="footer__div--icons">
         <a><img class="footer__img" src="./images/correo.png" /></a>
@@ -83,7 +94,6 @@
         /></a>
       </div>
     </div>
-    <p>Made with <> by me</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="./js/index.js"></script>
