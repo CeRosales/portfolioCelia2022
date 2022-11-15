@@ -90,7 +90,7 @@ form input[type="text"],
 form input[type="email"] {
     border: 1px solid hotpink;
     border-radius: 3px;
-    width: 30em;
+    width: 25em;
     height: 3em;
     
 }
@@ -105,13 +105,17 @@ form input[type="email"] {
     font-size: 1em;
     background-color: white;
     border: 1px solid hotpink;
-    pointer
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: hotpink;
 }
 
 textarea {
     border: 1px solid hotpink;
     border-radius: 3px;
-    width: 30em;
+    width: 25em;
     height: 15em;
 }
 
@@ -181,6 +185,15 @@ a:link, a:visited, a:focus, a:hover, a:active {
 @media all and (min-width: 768px) {
     .section1 {
         padding-bottom: 7em;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 30em;
+    }
+    textarea {
+        width: 25em;
+      
     }
 
     .footer__div {

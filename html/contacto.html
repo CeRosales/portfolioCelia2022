@@ -22,23 +22,27 @@
       <a href="mailto:celiarosalescaballero@gmail.com" target="_blank"
         ><img class="section1__img--1" src="../images/correo.png"
       /></a>
-      <a href="https://www.linkedin.com/in/celiarosales" target="_blank"
-        ><img class="section1__img--2" src="../images/linkedin.png"
+      <a href="../images/CV_CeliaRosales2022.pdf" target="_blank"
+        ><img class="section1__img--1" src="../images/cv(1).png"
       /></a>
       <p class="section1__p">¿Hablamos?</p>
     </div>
   </section>
 
   <section class="section2">
-    <form class="section2__form">
+    <form
+      action="https://formsubmit.co/celiarosalescaballero@gmail.com"
+      method="POST"
+      class="section2__form"
+    >
       <label for="nombre">Nombre</label>
-      <input class="form__nombre" type="text" />
+      <input class="form__nombre" id="nombre" name="nombre" type="text" />
 
       <label for="email">Email</label>
-      <input class="form__email" type="email" />
+      <input class="form__email" id="email" name="email" type="email" />
 
       <label for="mensaje">Mensaje</label>
-      <textarea class="form__textarea"></textarea>
+      <textarea class="form__textarea" id="textaera" name="textarea"></textarea>
 
       <button class="form__button" type="submit">Enviar</button>
     </form>
