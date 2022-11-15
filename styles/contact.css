@@ -176,7 +176,36 @@ a:link, a:visited, a:focus, a:hover, a:active {
 }
 
 
-@media (min-width: 700px) {
+
+
+@media all and (min-width: 768px) {
+    .section1 {
+        padding-bottom: 7em;
+    }
+
+    .footer__div {
+        padding-left: 8em;
+
+    }
+
+    .footer__img {
+        width: 3.5em;
+    }
+
+    .footer__h2 {
+        font-size: 2.5em;
+    }
+
+    .footer__made {
+        margin-top: 2em;
+        font-size: 1.5em;
+
+
+    }
+}
+
+
+@media all and (min-width: 1024px) { 
     .nav {
         flex-direction: column;
         width: 5em;
